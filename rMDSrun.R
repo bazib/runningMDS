@@ -1,5 +1,6 @@
 #!/usr/bin/env Rscript
 
+## This is a script for performing simple MDS in R. This maybe expanded to cover more advanced cases of running MDS with larger datasets
 mydata <- read.table("datafile", sep=" ")
 dwib <- dist(mydata)
 fit <- cmdscale(dwib,eig=TRUE, k=2)
